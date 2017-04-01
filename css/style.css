@@ -1,0 +1,156 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: darkslategray url("../img/bg.jpg") top center no-repeat;
+    background-size: cover;
+
+}
+
+#trame{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 0;
+}
+
+#content{
+    margin:auto;
+    box-shadow: 0 0 80px rgba(90, 43, 63, 1);
+    border-radius: 16px;
+}
+
+#game{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background: rgba(256,256,256,0.25);
+    border-radius: 16px 16px 0 0;
+}
+
+#game .player{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+    color: #5A2B3F;
+}
+
+#game .player i{
+    position: relative;
+    -webkit-animation: bummer 0.3s;
+    animation: bummer 0.3s;
+    -webkit-transform: scale(0,0);
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bummer {
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+
+@keyframes bummer {
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+#game .p1{
+    /*background:red;*/
+}
+
+#game .p1 i{
+    /*background:red;*/
+    top:20px;
+}
+
+#game .p2{
+    border-bottom: 6px solid #CBA83E;
+    /*background:green;*/
+}
+
+#game .p2 i{
+    bottom:20px;
+}
+
+#game .score{
+    position: absolute;
+    width: 130px;
+    right:10px;
+    top:10px;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: bold;
+    text-align: right;
+}
+
+#game #result{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 500px;
+    height: 500px;
+    background: rgba(0,0,0,0);
+}
+
+#game #result div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #5A2B3F;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#game #result div span{
+    display: block;
+    font-size: 16px;
+    margin-top: 4px;
+
+}
+
+#panel{
+    position: relative;
+    width: 500px;
+    /*padding: 30px;*/
+    margin: auto;
+    box-sizing: border-box;
+    background: chocolate;
+    color:#F1E086;
+    border-radius: 0 0 16px 16px;
+    z-index: 10;
+}
+
+#panel ul{
+    font-size: 0;
+    padding: 0;
+}
+
+#panel ul li{
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    width: calc(100% / 5);
+}
+
+#panel ul li i{
+    cursor: pointer;
+}
+
