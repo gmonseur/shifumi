@@ -1,7 +1,7 @@
 # Shifumi
-## The Big Bang Theory Version
+### The Big Bang Theory Version
 *Rock paper scissors lizard spock*
 
 [PLAY THE GAME](https://gmonseur.github.io/shifumi/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8xn-Rb0jejo" frameborder="0" allowfullscreen></iframe>
+[![Sheldon explaining rock paper scissors lizard spock](http://img.youtube.com/vi/x5Q6-wMx-K8/0.jpg)](https://www.youtube.com/watch?v=x5Q6-wMx-K8)
